@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./estilos/index.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap');
+
+text-bg {
+    text-align: center;
+}
+
+body {
+    background-color: #f1f1f1;
+    margin: 0;
+}
+.navbar {
+    background-color: #F29F05;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+    height: 109px;
+    text-decoration: none;
+}
+
+.navbar-logo {
+    width: 7cm;
+    padding-left: 10px;
+}
+
+.navbar-logo img {
+    width: 100%;
+}
+
+.navbar-buttons {
+    margin-left: auto;
+}
+
+.navbar-buttons a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.navbar-buttons a:hover {
+    background-color: #F2DA63;
+    text-decoration: none;
+    color: rgb(2, 2, 2);
+}
+
+.content {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #F2DA63;
+}
+
+
+    </style>
+</head>
+<body>
+
+<div class="cont">
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="images/logoTod.png" alt="Logo" style="width: 200px; height: 100px; text-decoration: none;">
+        </div>
+        <div class="navbar-buttons">
+            <a href="#inicio" style="margin-right: 10px;">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#nuestros-servicios">Nuestros servicios</a>
+            <a href="#Nosotros">Nosotros</a>
+            <a href="#">Contactenos</a>
+        </div>
+    </nav>
+
+    <div class="content" id="inicio">
+        <div class="welcome-text">
+            <br><br>
+            <h2 style="font-size: 100px; margin-bottom: 20px;">Bienvenido</h2>
+        </div>
+
+        <div class="additional-text">
+            <p style="margin-bottom: 20px;">"Con nuestro sistema web, ¡tu inmueble siempre en buen estado!"</p>
+        </div>
+
+        <div class="button-container">
+            <button style="padding: 10px 20px; margin-top: -70px; "><a href="login.php" style="color:white;">Comienza ya</a></button>
+            <br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+</div> 
+
+<div class="tx">
+    <br><br>
+    <h1>¿Qué servicios ofrecemos?</h1>
+</div>
+<div class="custom-container" id="servicios">
+    <div class="card">
+        <img src="images/a.jpg" alt="Casa">
+        <h3>REPARACION</h3>
+        <p>Desde problemas estructurales hasta averías en sistemas eléctricos, fontanería, climatización u otros componentes, la reparación busca devolver la funcionalidad y seguridad a la edificación.</p>
+        <div class="button-container">
+            <a href="login.php" class="btn btn-warning">Ver Más</a>
+        </div>
+    </div>
+    <div class="card">
+        <img src="images/albañil.jpg" alt="Casa">
+        <h3>MANTENIMIENTO</h3>
+        <p>Realizamos labores periódicas de inspección, limpieza, reparación y actualización de todas las áreas y sistemas que componen la propiedad, ofreciéndote siempre calidad y rapidez.</p>
+        <div class="button-container">
+            <a href="login.php" class="btn btn-warning">Ver Más</a>
+        </div>
+
+    </div>
+</div>  
+<h2 style="font-size: 50px; text-align: center; margin-top: 100px;">Nuestros Servicios</h2>
+<div class="services-container"  id="nuestros-servicios">
+    <div class="service-card">
+        <img src="images/constructor.jpg" alt="Servicio 1" style="width: 200px; height: 200px; border-radius: 50%;">
+        <h3>Albañileria</h3>
+        <p>Ofrecemos todo tipo de servicios de albañileria en tu hogar</p>
+    </div>
+    <div class="service-card">
+        <img src="images/pintor.jpg" alt="Servicio 2" style="width: 200px; height: 200px; border-radius: 50%;">
+        <h3>Pintura</h3>
+        <p>Arreglamos el diseño de tu hogar</p>
+    </div>
+    <div class="service-card">
+        <img src="images/cables.jpg" alt="Servicio 3" style="width: 200px; height: 200px; border-radius: 50%;">
+        <h3>Electricidad</h3>
+        <p>Reparamos cualquier equipo electrico</p>
+    </div>
+    <div class="service-card">
+        <img src="images/plomeria.jpg" alt="Servicio 4" style="width: 200px; height: 200px; border-radius: 50%;">
+        <h3>Plomeria</h3>
+        <p>Arreglamos cualquier desague o grieta</p>
+    </div>
+    <div class="service-card">
+        <img src="images/b.jpg" alt="Servicio 5" style="width: 200px; height: 200px; border-radius: 50%;">
+        <h3>Servicios generales</h3>
+        <p>Ofrecemos una gran diversidad de servicios</p>
+    </div>
+    <div class="service-card">
+        <img src="images/a.jpg" alt="Servicio 6" style="width: 200px; height: 200px; border-radius: 50%;">
+        <h3>Carpinteria</h3>
+        <p>Arreglamos cualquier cosa que tengas de madera</p>
+    </div>
+</div>
+</div>
+<div id="about" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about_right">
+          <figure>
+            <br><br><br>
+            <img src="./images/cables.jpg" alt="#" style="width:300px; border-radius:9px;">
+          </figure>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="titlepage">
+          <h2>NOSOTROS</h2>
+          <p>Somos un sistema de información orientado en la web para la gestión de solicitudes de mantenimiento y reparación de inmuebles en el municipio de Fusagasugá. Nuestro objetivo es facilitar la comunicación entre usuarios y prestadores del servicio.</p>
+          <br>
+          <h2>MISIÓN</h2>
+          <p>Nuestra misión es facilitar la comunicación entre usuarios y prestadores de servicios de mantenimiento yreparación de inmuebles a través de un sistema de información que permita enviar y recibir solicitudes y mensajes de manera eficiente y segura.</p>
+          <br>
+          <h2>VISIÓN</h2>
+          <p>Nuestra visión es convertirnos en el sistema de información más utilizado en el municipio, ofreciendo una plataforma confiable y segura que brinde comunicación eficiente entre usuarios y prestadores de servicios de mantenimiento y reparación de inmuebles.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section id="contact"></section>
+<div class="footer bottom_cross1">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4">
+            <ul class="location_icon">
+               <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>Telefono o WhatsApp: +(57)3002949856</li>
+               <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Email: todero2023@gmail.com</li>
+            </ul>
+            <form class="bottom_form">
+               <h3>Comentarios</h3>
+               <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+               <button class="sub_btn">Suscribete</button>
+            </form>
+         </div>             
+         <div class="tm-container-inner-2 tm-map-section">
+            <div class="row">
+               <div class="col-12">
+                  <div class="tm-map">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15913.887338811814!2d-74.3735296!3d4.3220992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1669581303667!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+   <div class="copyright">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <p>© 2023 Reservados todos los derechos. Diseñado por<a href="https://html.design/"> todero2023</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</section>
+
+
+
+</body>
+
+
+</html>

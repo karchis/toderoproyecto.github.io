@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./estilos/inicion.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@800&display=swap');</style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+       body{
+        background-color: #d9d9d9;
+       }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+        <img src="img/logo.png" alt="Logo" style="height:43px; width:90px;">
+        </div>
+        <div class="navbar-buttons">
+            <a href="inicion.html">Inicio</a>
+            <select name="catalogo" required onchange="redirectToPage(this.value)">
+                <option value="default" disabled selected>Servicios</option>
+                <option value="mantenimiento.php">Mantenimiento</option>
+                <option value="reparacion.php">Reparación</option>
+            </select>
+            <a href="logint_usuarios.php">Busco trabajo</a>
+            <a href="proyecto_usu.php">Calificar</a>
+            <a href="preguntasfrecuentes.php">Preguntas frecuentes</a>
+            <a href="cerrar_sesion.php">Cerrar Sesión</a>
+        </div>
+    </nav>
+    <!-- Resto del contenido -->
+    <div class="container content">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-1">Bienvenid@</h1>
+                <h1 class="display-3">¿Qué necesitas el día de hoy?</h1>
+                <br>
+                <p class="description">Nos alegra que estés aquí. Si estás buscando cualquier tipo de mantenimiento en tu inmueble, estás en el lugar indicado. Tenemos un equipo de personas altamente capacitadas y comprometidas para solucionar cualquier incidente que puedas tener. No busques más, estás en buenas manos.</p><br>
+                <center><select name="catalogo" required onchange="redirectToPage(this.value)">
+                    <option value="default" disabled selected>Servicios</option>
+                    <option value="mantenimiento.php">Mantenimiento</option>
+                    <option value="reparacion.php">Reparación</option>
+                </select></center>
+                <br><br>  
+        </div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <img src="images/albañileria.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Albañileria">
+                <div class="carousel-caption">
+                  <h3 style="color: black;  font-size: 50px; text-align: center; margin-top: 0;">Albañilería</h3>
+                  <p style="color: black;  text-align: center;">Nuestros expertos en albañilería realizarán tus proyectos con calidad y precisión.</p>
+                </div>
+              </div>
+          <div class="carousel-item active">
+            <img src="images/electricist.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Electricista">
+            <div class="carousel-caption">
+              <h3 style="color: black; font-size: 50px; text-align: center; margin-top:0;">Electricista</h3>
+              <p style="color: black; text-align: center;">Realizamos todo tipo de trabajos eléctricos.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/pintura.jpg" class="d-block w-100" style="height: 400px; object-fit: cover;" alt="Pintor">
+            <div class="carousel-caption">
+              <h3 style="color:black;    font-size: 50px; text-align: center; margin-top: 0;">Pintura</h3>
+              <p style="color: black;  text-align: center;">Transformamos tus espacios con nuestros servicios de pintura.</p>
+            </div>
+          </div>
+          
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+      </div>
+
+      
+    
+    <script>
+        function redirectToPage(page) {
+            if (page) {
+                window.location.href = page;
+            }
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_DATABASE: todero
+    ports:
+      - 3306:3306  # <---- Puerto expuesto de la base de datos
+
+  php:
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/var/www/html/src
+    ports:
+      - 8080:80  # Puerto expuesto para el servidor Apache
+
+volumes:
+    db_data:
